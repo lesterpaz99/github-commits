@@ -8,6 +8,10 @@ const commits = [
 
 export const CommitList = () => {
   return <ul>
-   
+  {
+    commits.map(commit => (
+      <li key={commit.id}>{commit.message}</li>
+    ))
+  }
   </ul>
 }
