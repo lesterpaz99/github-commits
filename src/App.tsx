@@ -1,7 +1,12 @@
-import './App.scss'
+import './App.scss';
+import { CommitList } from './components/commit-list';
 
 function App() {
-  return <div className='test'>Hey</div>
+	return (
+		<div>
+			<CommitList />
+		</div>
+	);
 }
 
-export default App
+export default App;
